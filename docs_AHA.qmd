@@ -1,0 +1,12 @@
+---
+title: ""
+---
+```{=html}
+<div style="padding: 56.25% 0 0 0; position: relative;">
+    <iframe src="plots/AHA_doctors_by_specialty_combined.html"
+            style="position: absolute; top: 0; left: 0; width: 100%; height: 300%;"
+            frameborder="3"
+            allowfullscreen>
+    </iframe>
+</div>
+```
