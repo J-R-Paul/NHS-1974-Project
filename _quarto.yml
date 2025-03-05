@@ -1,19 +1,34 @@
 project:
   type: website
+  output-dir: docs
+
 
 website:
-  title: "NHS-1974-Project/"
+  title: "NHS 1974 Project"
+  search: false
   navbar:
     left:
       - href: index.qmd
-        text: Home
-      - about.qmd
+        text: "Paper"
+      - href: bar_AHA.qmd
+        text: "Bar AHA"
+      - href: bar_RHA.qmd
+        text: "Bar RHA"
+      - href: docs_RHA.qmd
+        text: "Consultants in RHA"
+      - href: docs_AHA.qmd
+        text: "Consultants in AHA"
+      - href: beds_RHA.qmd
+        text: "Beds in RHA"
+      - href: beds_AHA.qmd
+        text: "Beds in AHA"
 
 format:
   html:
     theme: cosmo
     css: styles.css
-    toc: true
+    page-layout: full
+    # toc: true
 
 
 
