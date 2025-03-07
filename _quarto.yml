@@ -10,18 +10,36 @@ website:
     left:
       - href: index.qmd
         text: "Paper"
-      - href: bar_AHA.qmd
-        text: "Bar AHA"
-      - href: bar_RHA.qmd
-        text: "Bar RHA"
-      - href: docs_RHA.qmd
-        text: "Consultants in RHA"
-      - href: docs_AHA.qmd
-        text: "Consultants in AHA"
-      - href: beds_RHA.qmd
-        text: "Beds in RHA"
-      - href: beds_AHA.qmd
-        text: "Beds in AHA"
+      - text: "Area Health Authority"
+        menu:
+          - href: bar_AHA.qmd
+            text: "Bar Chart"
+          - href: docs_AHA.qmd
+            text: "Consultants"
+          - href: beds_AHA.qmd
+            text: "Beds"
+      - text: "Regional Health Authority"
+        menu:
+          - href: bar_RHA.qmd
+            text: "Bar Chart"
+          - href: docs_RHA.qmd
+            text: "Consultants"
+          - href: beds_RHA.qmd
+            text: "Beds"
+
+
+      # - href: bar_AHA.qmd
+      #   text: "Bar AHA"
+      # - href: bar_RHA.qmd
+      #   text: "Bar RHA"
+      # - href: docs_RHA.qmd
+      #   text: "Consultants in RHA"
+      # - href: docs_AHA.qmd
+      #   text: "Consultants in AHA"
+      # - href: beds_RHA.qmd
+      #   text: "Beds in RHA"
+      # - href: beds_AHA.qmd
+      #   text: "Beds in AHA"
 
 format:
   html:
