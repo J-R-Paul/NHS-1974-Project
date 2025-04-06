@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RHA Consultants Data - NHS 1974 Research</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">NHS 1974 Research</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="ahaDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Area Health Authority
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="ahaDropdown">
+                            <li><a class="dropdown-item" href="aha-bars.html">Bar Charts</a></li>
+                            <li><a class="dropdown-item" href="aha-consultants.html">Consultants</a></li>
+                            <li><a class="dropdown-item" href="aha-beds.html">Hospital Beds</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle active" href="#" id="rhaDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Regional Health Authority
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="rhaDropdown">
+                            <li><a class="dropdown-item" href="rha-bars.html">Bar Charts</a></li>
+                            <li><a class="dropdown-item active" href="rha-consultants.html">Consultants</a></li>
+                            <li><a class="dropdown-item" href="rha-beds.html">Hospital Beds</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header class="bg-light text-center py-4 mt-5">
+        <div class="container">
+            <h1>Regional Health Authority Consultants Distribution</h1>
+            <p class="lead">Exploring the distribution of medical consultants across RHAs</p>
+        </div>
+    </header>
+
+    <section class="py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mx-auto">
+                    <div class="mb-5">
+                        <h2>Consultant Distribution by Specialty at Regional Level</h2>
+                        <p>This interactive visualization shows how medical consultants were distributed across different specialties in the Regional Health Authorities following the 1974 NHS reorganization. The data provides important insights into workforce planning and resource allocation at the regional level.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="visualization-container">
+                <div class="visualization-header">
+                    <h3 class="m-0">Consultants by Specialty (RHA)</h3>
+                </div>
+                <div class="visualization-content">
+                    <iframe src="plots/RHA_doctors_by_specialty_combined.html" class="visualization-iframe" scrolling="no" id="rha-doctors-iframe" onload="resizeIframe('rha-doctors-iframe')"></iframe>
+                </div>
+            </div>
+
+            <div class="row mt-5">
+                <div class="col-lg-8 mx-auto">
+                    <h2>Regional Workforce Planning</h2>
+                    <p>The visualization above presents the distribution of consultants across different medical specialties for each Regional Health Authority. This data reveals broader patterns in how specialized medical expertise was allocated across larger geographic regions.</p>
+                    
+                    <h3 class="mt-4">Key Observations</h3>
+                    <ul>
+                        <li>Regional variations in specialty distribution reflect different healthcare priorities and needs</li>
+                        <li>Some regions show concentration in specific specialties, suggesting centers of excellence</li>
+                        <li>Regional workforce planning shows patterns of specialization and resource allocation</li>
+                    </ul>
+                    
+                    <h3 class="mt-4">Comparative Analysis</h3>
+                    <p>When examined alongside the Area Health Authority data, these regional visualizations provide valuable insights into how the NHS implemented its tiered administrative structure for healthcare planning and resource allocation.</p>
+                    
+                    <div class="d-flex justify-content-between mt-5">
+                        <a href="rha-bars.html" class="btn btn-outline-primary"><i class="fas fa-arrow-left me-2"></i>RHA Bar Charts</a>
+                        <a href="rha-beds.html" class="btn btn-primary">View RHA Hospital Beds<i class="fas fa-arrow-right ms-2"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-dark text-light py-4 mt-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <p>&copy; 2025 NHS 1974 Research Project</p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <a href="#" class="text-light me-3"><i class="fab fa-github"></i></a>
+                    <a href="#" class="text-light me-3"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="text-light"><i class="fab fa-linkedin"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
